@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>To add a book</title>
+    <style>
+        .error{
+           color: red;
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<form th:method="POST" th:action="@{/books}" th:object="${book}">
+<div>
+    <label for="author">Автор</label>
+    <input type="text" placeholder="автор" th:field="*{author}" id = "author">
+    <div th:if="${#fields.hasErrors('author')}" th:errors="*{author}"class="error"></div>
+</div>
+    <div>
+        <label for="nameOfBook">Название книги</label>
+        <input type="text" placeholder="имя книги" th:field="*{nameOfBook}" id = "nameOfBook">
+        <div th:if="${#fields.hasErrors('nameOfBook')}" th:errors="*{book}"class="error"></div>
+    </div>
+    <div>
+        <label for="genre">Жанр</label>
+        <input type="text"placeholder="жанр" th:field="*{genre}" id = "genre">
+        <div th:if="${#fields.hasErrors('genre')}" th:errors="*{genre}"class="error"></div>
+    <br>
+        <input type="submit" value="Добавить книгу" class="button">
+    </div>
+</form>
+<div>
+    <a th:href="@{/books}">Назад ко всем книгам</a>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+

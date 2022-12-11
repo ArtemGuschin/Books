@@ -1,0 +1,89 @@
+body{
+    background: #eeeaea;
+}
+h1{
+    text-align:center;
+    letter-spacing:2.4px;
+    font-size:35px;
+    color: #000705;
+    text-shadow:2px 1px 2px #d5d9a2;
+    font-family: 'Roboto', sans-serif;
+    font-style: initial;
+    font-weight:700;
+}
+a{
+    text-decoration: none;
+    color: #140d1a;
+    font-size:25px;
+    margin:10px;
+    font-family: 'Roboto', fantasy;
+    font-style: italic;
+    font-weight:400;
+}
+a:hover{
+    color: #1f1206
+}
+h2{
+    text-align:center;
+    letter-spacing:2.4px;
+    font-size:35px;
+    color: #0c021a;
+    text-shadow:2px 1px 2px #deeaea;
+    margin:15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight:500;
+}
+input[type=text]{
+    width:200px;
+    height:20px;
+    margin:5px
+}
+label{
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    margin:0px 10px
+}
+.button{
+    font-size: 18px;
+    font-family: 'Lobster', fantasy;
+    transition: 1s;
+    width: 150px;
+    height: 40px;
+    color: #021525;
+    background: hsl(0deg 14% 81% / 87%);
+    margin-bottom: 20px;
+
+    margin:10px;
+}
+
+.button:hover{
+    background: -webkit-linear-gradient(#3cad5b,#24a3ca,#7cba9d);
+    border-radius:0%;
+    color:black
+}
+.author{
+    color: #0f1304;
+    text-align:center;
+    font-size: 30px;
+    font-family: 'Kenia', cursive;
+    font-weight: 400;
+    letter-spacing:2px;
+}
+.nameOfBook{
+    color: #021113;
+    text-align:center;
+    font-size: 30px;
+    font-family: 'Kenia', cursive;
+    font-weight: 400;
+    letter-spacing:2px;
+}
+.genre{
+    color: #140215;
+    text-align:center;
+    font-size: 30px;
+    font-family: 'Kenia', cursive;
+    font-weight: 400;
+    letter-spacing:2px;
+
+}

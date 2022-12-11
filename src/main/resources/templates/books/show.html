@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Book</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<h1>Информация о книге</h1>
+
+<h2>Автор</h2>
+<div class="author" th:text="${book.getAuthor()}"></div>
+
+<h2>Название книги</h2>
+<div class="nameOfBook" th:text="${book.getNameOfBook()}"></div>
+
+<h2>Жанр</h2>
+<div class="genre" th:text="${book.getGenre()}"></div>
+<hr>
+<hr>
+<div>
+    <a th:href="@{/books/{id}/edit(id=${book.getId()})}">Отредактировать книгу</a>
+</div>
+
+<form th:method="DELETE" th:action="@{/books/{id}(id=${book.getId()})}">
+    <input type="submit" value="Удалить книгу" class="button">
+</form>
+
+<div>
+    <a th:href="@{/books}">Назад ко всем книгам</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>To edit a book</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<form th:method="PATCH" th:action="@{/books/{id}(id=${book.getId()})}" th:object="${book}">
+    <div>
+        <label for="author">Автор</label>
+        <input type="text" th:field="*{author}" id="author">
+    </div>
+
+    <div>
+        <label for="nameOfBook">Название книги</label>
+        <input type="text" th:field="*{nameOfBook}" id="nameOfBook">
+    </div>
+    <div>
+        <label for="genre">Жанр</label>
+        <input type="text" th:field="*{genre}" id="genre">
+    </div>
+
+    <input type="submit" value="Отредактировать"  class="button">
+</form>
+
+</body>
+</html>
