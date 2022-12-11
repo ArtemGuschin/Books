@@ -1,5 +1,7 @@
 body{
-    background: #eeeaea;
+    background:url("https://img.freepik.com/free-photo/high-angle-bookmark-and-tea-cup-arrangement_23-2149894364.jpg?w=996&t=st=1670744828~exp=1670745428~hmac=c1ae1aae756230fea7ad90ee69eb35c18e8baa93ea3a601d5a6aabb3469ec4e9")no-repeat;
+    position: absolute;
+    background-size: 100%;
 }
 h1{
     text-align:center;
